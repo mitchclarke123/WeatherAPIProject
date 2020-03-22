@@ -16,7 +16,7 @@ namespace WeatherAPIProject.CurrentWeatherService.HTTPManager
 
         public string GetCurrentWeather()
         {
-            var request = new RestRequest("/latest" + AppConfigReader.ApiUrlMod + AppConfigReader.ApiKey);
+            var request = new RestRequest("weather?q=Tamworth&appid=" + AppConfigReader.ApiKey);
             var response = client.Execute(request, Method.GET);
             return response.Content;
         }

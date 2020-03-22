@@ -20,7 +20,7 @@ namespace WeatherAPIProject.Test
             Assert.AreEqual(200,_currentWeatherService.currentWeatherDTO.CurrentWeather.cod);
         }
 
-        [Test()]
+        [Test]
 
         public void CountryIsCorrect()
         {

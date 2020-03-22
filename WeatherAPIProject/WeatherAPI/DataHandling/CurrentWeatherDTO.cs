@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using WeatherAPIProject.WeatherAPI.DataHandling;
 
-namespace WeatherAPIProject.CurrentWeatherSerice.DataHnadling
+namespace WeatherAPIProject.CurrentWeatherSerice.DataHandling
 {
     public class CurrentWeatherDTO
     {
@@ -9,9 +9,9 @@ namespace WeatherAPIProject.CurrentWeatherSerice.DataHnadling
         public WeatherServiceRoot CurrentWeather { get; set; }
 
         // Method that creates the above object following passing in the response from the API
-        public void DeserializeCurrentWeather(string LatestRatesResponse)
+        public void DeserializeCurrentWeather(string CurrentWeatherResponse)
         {
-            CurrentWeather = JsonConvert.DeserializeObject<WeatherServiceRoot>(LatestRatesResponse);
+            CurrentWeather = JsonConvert.DeserializeObject<WeatherServiceRoot>(CurrentWeatherResponse);
         }
     }
 }
