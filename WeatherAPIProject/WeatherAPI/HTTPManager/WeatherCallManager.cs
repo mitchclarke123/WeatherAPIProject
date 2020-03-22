@@ -1,6 +1,9 @@
 ﻿using RestSharp;
+using WeatherAPIProject;
+
 // only need one of these
-namespace FrameworkCreation.FixerLatestService.HTTPManager
+
+namespace WeatherAPIProject.CurrentWeatherService.HTTPManager
 {
     public class WeatherCallManager
     {
@@ -11,12 +14,13 @@ namespace FrameworkCreation.FixerLatestService.HTTPManager
             client = new RestClient(AppConfigReader.BaseUrl);
         }
 
-        public string GetLatestRates()
+        public string GetCurrentWeather()
         {
             var request = new RestRequest("/latest" + AppConfigReader.ApiUrlMod + AppConfigReader.ApiKey);
             var response = client.Execute(request, Method.GET);
             return response.Content;
         }
+
 
         // add new methods for each differnt API call (may use parameters)
     }
