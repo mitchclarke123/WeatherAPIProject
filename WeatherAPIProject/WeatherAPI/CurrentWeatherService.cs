@@ -32,6 +32,30 @@ namespace WeatherAPIProject.WeatherService
             json_weather = JsonConvert.DeserializeObject<JObject>(currentCity);
         }
 
+        public bool WindCheck()
+        {
+            var Wind = currentWeatherDTO.CurrentWeather.wind.speed;
+            if (Wind >= 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool HumidityCheck()
+        {
+            var Humidity = currentWeatherDTO.CurrentWeather.main.humidity;
+            if (Humidity >= 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 
 }

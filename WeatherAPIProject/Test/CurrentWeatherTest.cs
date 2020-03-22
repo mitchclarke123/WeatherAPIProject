@@ -15,9 +15,10 @@ namespace WeatherAPIProject.Test
 {
     [TestFixture]
     public class CurrentWeatherTests
+
     {
         CurrentWeather _currentWeatherService = new CurrentWeather();
-
+        [Test]
         public void CurrentWeatherStatusTest()
         {
             Assert.AreEqual(200, _currentWeatherService.currentWeatherDTO.CurrentWeather.cod);
@@ -39,11 +40,20 @@ namespace WeatherAPIProject.Test
 
         [Test]
 
-        public void WindSpeedIsCorrect()
-            {
-            WeatherChecks WC = new WeatherChecks();
+        public void WindSpeedIsWorking()
+        {
+            CurrentWeather WC = new CurrentWeather();
             var result = WC.WindCheck();
             Assert.AreEqual(true, result);
-            }
+        }
+
+        [Test]
+
+        public void HumidityIsWorking()
+        {
+            CurrentWeather WC = new CurrentWeather();
+            var result = WC.HumidityCheck();
+            Assert.AreEqual(true, result);
+        }
     }
 }
