@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
+using WeatherAPIProject.CurrentWeatherSerice.DataHandling;
 using WeatherAPIProject.CurrentWeatherService;
+using WeatherAPIProject.WeatherAPI;
 using WeatherAPIProject.WeatherAPI.DataHandling;
 using WeatherAPIProject.WeatherService;
+
 
 namespace WeatherAPIProject.Test
 {
@@ -17,7 +20,7 @@ namespace WeatherAPIProject.Test
 
         public void CurrentWeatherStatusTest()
         {
-            Assert.AreEqual(200,_currentWeatherService.currentWeatherDTO.CurrentWeather.cod);
+            Assert.AreEqual(200, _currentWeatherService.currentWeatherDTO.CurrentWeather.cod);
         }
 
         [Test]
@@ -33,5 +36,14 @@ namespace WeatherAPIProject.Test
         {
             Assert.AreEqual("Tamworth", _currentWeatherService.currentWeatherDTO.CurrentWeather.name);
         }
+
+        [Test]
+
+        public void WindSpeedIsCorrect()
+            {
+            WeatherChecks WC = new WeatherChecks();
+            var result = WC.WindCheck();
+            Assert.AreEqual(true, result);
+            }
     }
 }

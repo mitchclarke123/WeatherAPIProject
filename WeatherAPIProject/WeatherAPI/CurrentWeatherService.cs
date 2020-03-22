@@ -32,7 +32,6 @@ namespace WeatherAPIProject.WeatherService
             json_weather = JsonConvert.DeserializeObject<JObject>(currentCity);
         }
 
-
     }
 
 }

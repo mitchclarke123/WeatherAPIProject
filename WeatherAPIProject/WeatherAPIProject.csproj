@@ -70,6 +70,7 @@
     <Compile Include="WeatherAPI\DataHandling\CurrentWeatherModel.cs" />
     <Compile Include="WeatherAPI\CurrentWeatherService.cs" />
     <Compile Include="WeatherAPI\HTTPManager\WeatherCallManager.cs" />
+    <Compile Include="WeatherAPI\WeatherChecks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
