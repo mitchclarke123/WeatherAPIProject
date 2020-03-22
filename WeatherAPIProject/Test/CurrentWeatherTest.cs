@@ -26,5 +26,12 @@ namespace WeatherAPIProject.Test
         {
             Assert.AreEqual("GB", _currentWeatherService.currentWeatherDTO.CurrentWeather.sys.country);
         }
+
+        [Test]
+
+        public void LocationIsCorrect()
+        {
+            Assert.AreEqual("Tamworth", _currentWeatherService.currentWeatherDTO.CurrentWeather.name);
+        }
     }
 }
