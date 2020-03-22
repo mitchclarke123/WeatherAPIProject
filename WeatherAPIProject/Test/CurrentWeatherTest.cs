@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
-using WeatherAPIProject.CurrentWeatherSerice.DataHandling;
-using WeatherAPIProject.CurrentWeatherService;
-using WeatherAPIProject.WeatherAPI;
-using WeatherAPIProject.WeatherAPI.DataHandling;
+﻿using NUnit.Framework;
 using WeatherAPIProject.WeatherService;
 
 
@@ -37,6 +28,15 @@ namespace WeatherAPIProject.Test
         {
             Assert.AreEqual("Tamworth", _currentWeatherService.currentWeatherDTO.CurrentWeather.name);
         }
+        
+        [Test]
+
+        public void CloudsIsWorking()
+        {
+            CurrentWeather WC = new CurrentWeather();
+            var result = WC.CloudCheck();
+            Assert.AreEqual(true, result);
+        }
 
         [Test]
 
@@ -53,6 +53,14 @@ namespace WeatherAPIProject.Test
         {
             CurrentWeather WC = new CurrentWeather();
             var result = WC.HumidityCheck();
+            Assert.AreEqual(true, result);
+        }
+        
+        [Test]
+        public void TempretureIsWorking()
+        {
+            CurrentWeather WC = new CurrentWeather();
+            var result = WC.TempCheck();
             Assert.AreEqual(true, result);
         }
     }

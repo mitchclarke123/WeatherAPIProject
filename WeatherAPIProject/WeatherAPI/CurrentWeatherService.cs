@@ -56,6 +56,29 @@ namespace WeatherAPIProject.WeatherService
                 return false;
             }
         }
+        public bool TempCheck()
+        {
+            var Temp = currentWeatherDTO.CurrentWeather.main.humidity;
+            if (Temp > -150)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool CloudCheck()
+        {
+            var Clouds = currentWeatherDTO.CurrentWeather.clouds.all;
+            if(Clouds >= 0)
+            {
+                return true;
+            }
+            else
+            {
+               return false;
+            }
+        }
     }
-
 }

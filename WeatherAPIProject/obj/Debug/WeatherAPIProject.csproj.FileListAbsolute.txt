@@ -23,6 +23,7 @@ C:\Users\mitch\Desktop\SpartaGlobal Work\WeatherAPIProject\WeatherAPIProject\Wea
 C:\Users\mitch\Desktop\SpartaGlobal Work\WeatherAPIProject\WeatherAPIProject\WeatherAPIProject\obj\Debug\WeatherAPIProject.csproj.CopyComplete
 C:\Users\mitch\Desktop\SpartaGlobal Work\WeatherAPIProject\WeatherAPIProject\WeatherAPIProject\obj\Debug\WeatherAPIProject.dll
 C:\Users\mitch\Desktop\SpartaGlobal Work\WeatherAPIProject\WeatherAPIProject\WeatherAPIProject\obj\Debug\WeatherAPIProject.pdb
+C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\obj\Debug\WeatherAPIProject.csprojAssemblyReference.cache
 C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\bin\Debug\NUnit3.TestAdapter.dll
 C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\bin\Debug\NUnit3.TestAdapter.pdb
 C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\bin\Debug\nunit.engine.dll
@@ -44,7 +45,6 @@ C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\bin\Debu
 C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\bin\Debug\nunit.framework.pdb
 C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\bin\Debug\nunit.framework.xml
 C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\bin\Debug\RestSharp.xml
-C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\obj\Debug\WeatherAPIProject.csprojAssemblyReference.cache
 C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\obj\Debug\WeatherAPIProject.csproj.CopyComplete
 C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\obj\Debug\WeatherAPIProject.dll
 C:\Users\TECH-W129birm\Source\Repos\WeatherAPIProject\WeatherAPIProject\obj\Debug\WeatherAPIProject.pdb
